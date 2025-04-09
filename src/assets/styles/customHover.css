@@ -1,0 +1,12 @@
+/* customHover.css */
+.group:hover p.colors-transition {
+    color: white !important;
+}
+
+.group:hover h3.colors-transition {
+    color: white !important;
+}
+
+.link-hover-override:hover {
+    color: white !important;
+}

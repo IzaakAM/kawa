@@ -2,6 +2,8 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
+
+import '../assets/styles/customHover.css';
 import { LIGHT_MODE, DARK_MODE, FONTS } from '../assets/styles/constants.jsx';
 
 // Exemple de sélection de mode (vous pouvez le définir dynamiquement)
@@ -25,9 +27,9 @@ function Header() {
 
             <nav>
                 <ul style={{ display: 'flex', gap: '1rem', paddingRight: '1rem' }}>
-                    <li><Link to="/" style={navLinkStyle}> Accueil </Link></li>
-                    <li><Link to="/carte" style={navLinkStyle}> Carte </Link></li>
-                    <li><Link to="/contact" style={navLinkStyle}> Contact </Link></li>
+                    <li><Link to="/" style={navLinkStyle} className="link-hover-override"> Accueil </Link></li>
+                    <li><Link to="/carte" style={navLinkStyle} className="link-hover-override"> Carte </Link></li>
+                    <li><Link to="/contact" style={navLinkStyle} className="link-hover-override"> Contact </Link></li>
                 </ul>
             </nav>
         </header>
