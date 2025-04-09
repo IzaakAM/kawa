@@ -9,7 +9,7 @@ import ContactPage from './pages/Contact';
 
 export default function KawaApp() {
     return (
-        <div className="min-h-screen bg-amber-50">
+        <div className="min-h-screen w-screen bg-amber-50">
             <Header />
 
             <main className="container mx-auto px-4 py-8">

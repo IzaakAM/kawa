@@ -24,7 +24,7 @@ function Header() {
             </h1>
 
             <nav>
-                <ul style={{ display: 'flex', gap: '1rem',}}>
+                <ul style={{ display: 'flex', gap: '1rem', paddingRight: '1rem' }}>
                     <li><Link to="/" style={navLinkStyle}> Accueil </Link></li>
                     <li><Link to="/carte" style={navLinkStyle}> Carte </Link></li>
                     <li><Link to="/contact" style={navLinkStyle}> Contact </Link></li>
