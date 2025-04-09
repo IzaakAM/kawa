@@ -12,25 +12,22 @@ const THEME = isDarkMode ? DARK_MODE : LIGHT_MODE;
 const navLinkStyle = {
     color: THEME.onContainer,
     textDecoration: 'none',
-    borderBottom: '2px solid transparent',
-    ':hover': {
-        borderBottom: `2px solid ${THEME.onContainer}`,
-    },
+    border: '6px solid transparent',
 };
 
 function Header() {
     return (
-        <header style={{ backgroundColor: THEME.primary, padding: '1rem', color: THEME.onContainer }}>
-            {/* Logo ou titre du site */}
-            <h1 style={{ fontSize: '1.875rem', fontFamily: FONTS.title, marginBottom: '1rem' }}>
+        <header style={{ backgroundColor: THEME.primary, padding: '1rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+
+            <h1 style={{ fontSize: '1.875rem', color: THEME.onContainer }}>
                 Kawa INSA Hauts-de-France
             </h1>
 
-            <nav style={{ display: 'inline-block', float: 'right' }}>
-                <ul style={{ display: 'flex', gap: '1rem' }}>
-                    <li><Link to="/" style={navLinkStyle}>Accueil</Link></li>
-                    <li><Link to="/carte" style={navLinkStyle}>Carte</Link></li>
-                    <li><Link to="/contact" style={navLinkStyle}>Contact</Link></li>
+            <nav>
+                <ul style={{ display: 'flex', gap: '1rem',}}>
+                    <li><Link to="/" style={navLinkStyle}> Accueil </Link></li>
+                    <li><Link to="/carte" style={navLinkStyle}> Carte </Link></li>
+                    <li><Link to="/contact" style={navLinkStyle}> Contact </Link></li>
                 </ul>
             </nav>
         </header>
