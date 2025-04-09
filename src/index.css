@@ -1,3 +1,8 @@
+@import "tailwindcss/preflight";   /* Base reset (Preflight) de Tailwind v4 */
+@import "tailwindcss/utilities";   /* Classes utilitaires de Tailwind */
+
+@import "tailwindcss";
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
