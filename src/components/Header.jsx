@@ -21,9 +21,16 @@ function Header() {
     return (
         <header style={{ backgroundColor: THEME.primary, padding: '1rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
 
-            <h1 style={{ fontSize: '1.875rem', color: THEME.onContainer }}>
-                Kawa INSA Hauts-de-France
-            </h1>
+            <div style={{ display: "flex", alignItems: "center" }}>
+                <img
+                    src="/logo.png"       // chemin absolu vers le dossier public
+                    alt="Logo Kawa"
+                    style={{ marginRight: "1rem", height: "50px", backgroundColor: THEME.background, padding: '0.1rem', borderRadius: "10px" }}
+                />
+                <h1 style={{ fontSize: "1.875rem", color: THEME.onContainer }}>
+                    Kawa INSA Hauts-de-France
+                </h1>
+            </div>
 
             <nav>
                 <ul style={{ display: 'flex', gap: '1rem', paddingRight: '1rem' }}>
