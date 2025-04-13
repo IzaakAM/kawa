@@ -4,13 +4,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import '../assets/styles/customHover.css';
-import { LIGHT_MODE, DARK_MODE, FONTS } from '../assets/styles/constants.jsx';
+import { LIGHT_MODE, DARK_MODE } from '../assets/styles/constants.jsx';
 
-// Exemple de sélection de mode (vous pouvez le définir dynamiquement)
 const isDarkMode = false;
 const THEME = isDarkMode ? DARK_MODE : LIGHT_MODE;
 
-// Style commun pour les liens de navigation
 const navLinkStyle = {
     color: THEME.onContainer,
     textDecoration: 'none',
@@ -23,7 +21,7 @@ function Header() {
 
             <div style={{ display: "flex", alignItems: "center" }}>
                 <img
-                    src="/logo.png"       // chemin absolu vers le dossier public
+                    src="/logo.png"
                     alt="Logo Kawa"
                     style={{ marginRight: "1rem", height: "50px", backgroundColor: THEME.background, padding: '0.1rem', borderRadius: "10px" }}
                 />
